@@ -4,10 +4,13 @@
 
 This lab is a practical exercise to show how poorly protected login screens let hackers use automated tools to endlessly guess passwords until they finally break into an account.
 
-## Prerequisites
+## Lab Environment & Toolset
 
-Ensure you have DVWA installed and running.
-Familiarize yourself with BurpSuite and the FoxyProxy extension for effective testing.
+Target Application: Damn Vulnerable Web Application (DVWA)
+
+Interception Proxy: Burp Suite (Proxy / Intercept / Intruder)
+
+Attack Method: Cluster Bomb attack leveraging custom username and password lists.
 
 ## STEP - 1 Setup Metasploit , DVWA & BURPSUITE
 
@@ -52,3 +55,24 @@ Create sample lists of usernames and passwords with different variations so you 
 
 <img width="1900" height="1008" alt="Burp Suite Community Edition v2026 9 3 - Temporary Project 03_11_2026 14_45_36" src="https://github.com/user-attachments/assets/37f06380-6b04-4635-961b-23590e2a9369" />
 <img width="1920" height="1020" alt="Burp Suite Community Edition v2026 9 3 - Temporary Project 03_11_2026 14_45_02" src="https://github.com/user-attachments/assets/06e13640-16a3-4a56-9f32-4a02fb1c689e" />
+
+## STEP - 6 Gaining password access
+
+<img width="1900" height="1008" alt="2  Intruder attack of http___192 168 1 104 03_11_2026 14_48_26" src="https://github.com/user-attachments/assets/db556c46-5f4e-42de-a034-7c86701ea363" />
+
+<img width="1920" height="1020" alt="2  Intruder attack of http___192 168 1 104 03_11_2026 14_53_37" src="https://github.com/user-attachments/assets/66788392-402a-4e90-b09d-b4829dfe0ac0" />
+
+## Conclusion & Remediation
+
+The DVWA Brute Force lab demonstrates that web applications lacking robust authentication controls are highly susceptible to automated credential guessing. By intercepting traffic via Burp Suite and executing a Cluster Bomb attack, accounts can be successfully compromised across vulnerable difficulty levels.
+
+Recommended Remediations
+To protect authentication mechanisms against brute force and credential stuffing attacks, implement the following controls:
+
+Rate Limiting & Account Lockout: Temporarily lock accounts or enforce exponential delays after a set number of consecutive failed login attempts (e.g., 5 failures).
+
+Multi-Factor Authentication (MFA): Require a secondary verification method (such as an authenticator app or hardware token) beyond standard passwords.
+
+CAPTCHA / Challenge-Response: Integrate automated challenge systems on login forms after failed attempts to disrupt automated script execution.
+
+Robust Logging & Monitoring: Monitor authentication traffic for high-frequency request spikes or unusual patterns indicative of automated tooling.
