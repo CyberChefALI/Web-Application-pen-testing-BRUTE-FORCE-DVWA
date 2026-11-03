@@ -17,21 +17,16 @@ It means downloading and preparing the three main tools you need for the lab: Me
 <img width="1920" height="1020" alt="Damn Vulnerable Web App (DVWA) v1 0 7 __ Welcome and 1 more page - Personal - Microsoft​ Edge 28_10_2026 14_50_30" src="https://github.com/user-attachments/assets/eeff9363-7300-45bd-85d9-a2cb5544ceb7" />
 
 
-## STEP - 2 Launch Burp Suite and navigate to the Proxy tab.
 
-Open Burp Suite and click on the Proxy tab at the top of the window to access your web traffic controls.
-<img width="1920" height="1020" alt="PortSwigger - Chromium 03_11_2026 13_42_34" src="https://github.com/user-attachments/assets/a8981e7d-a44b-4d12-8046-fda8dcf115dc" />
-<img width="1920" height="1020" alt="Burp Suite Community Edition v2026 9 3 - Temporary Project 29_10_2026 11_05_43" src="https://github.com/user-attachments/assets/a18a37c8-7f18-4eb8-a8a0-30f9fbc10721" />
-
-
-## STEP - 3 Launch DVWA
+## STEP - 2 Launch DVWA
 
 A) Set the security level to medium
 <img width="1920" height="1020" alt="Damn Vulnerable Web App (DVWA) v1 0 7 __ Welcome and 1 more page - Personal - Microsoft​ Edge 28_10_2026 14_50_53" src="https://github.com/user-attachments/assets/c31dcbd5-6fd9-483b-a9f5-b0a1c816fb1d" />
 
 B) Brute Force section
-Open DVWA, click on the Brute Force section, and try logging in using i<img width="1920" height="1020" alt="Burp Suite Community Edition v2026 9 3 - Temporary Project 29_10_2026 11_05_43" src="https://github.com/user-attachments/assets/a8d1a7a4-dfbb-465c-8174-c8f51d80a51e" />
-ncorrect usernames and passwords
+Open DVWA, click on the Brute Force section, and try logging in using incorrect usernames and passwords
+<img width="1920" height="1020" alt="Burp Suite Community Edition v2026 9 3 - Temporary Project 29_10_2026 11_05_43" src="https://github.com/user-attachments/assets/a8d1a7a4-dfbb-465c-8174-c8f51d80a51e" />
+
 <img width="1920" height="1020" alt="Damn Vulnerable Web App (DVWA) v1 0 7 __ Vulnerability_ Brute Force - Personal - Microsoft​ Edge 03_11_2026 14_08_32" src="https://github.com/user-attachments/assets/50c445b9-9c1f-46d2-a0ea-dc901c601ed3" />
 
 ## STEP - 4 Launch Burp suite
